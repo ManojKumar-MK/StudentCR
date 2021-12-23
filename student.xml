@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<students>
+    
+  <student rollno="50">
+        
+    <name>MK</name>
+        
+    <course>B.Sc.,</course>
+        
+    <address>SVKS</address>
+      
+  </student>
+  
+  <student rollno="49">
+    <name>Dhamo</name>
+    <course>B.Sc.,</course>
+    <address>SVKS</address>
+  </student>
+</students>
