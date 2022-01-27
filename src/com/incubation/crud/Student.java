@@ -1,18 +1,23 @@
 package com.incubation.crud;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 public class Student implements Serializable {
+
+    private static final long serialVersionUID = 2L;  // FOR SERIALIZATION AND DESERIALIZATION
     private int rollno;
     private String name;
     private String course;
-    private String address;
+    private String address;   // Modifyable
+    private String phone;     //  // Modifyable
 
-    public Student(int rollno, String name, String course, String address) {
+    public Student(int rollno, String name, String course, String address, String phone) {
         this.rollno = rollno;
         this.name = name;
         this.course = course;
         this.address = address;
+        this.phone = phone;
     }
 
     public Student() {
@@ -50,13 +55,24 @@ public class Student implements Serializable {
         this.address = address;
     }
 
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
     @Override
     public String toString() {
-        return "com.incubation.crud.Student{" +
+        return "Student{" +
                 "rollno=" + rollno +
                 ", name='" + name + '\'' +
                 ", course='" + course + '\'' +
                 ", address='" + address + '\'' +
+                ", phone='" + phone + '\'' +
                 '}';
     }
+
+
 }
